@@ -140,9 +140,3 @@ java -jar target/firstbank-account-app-1.0.0.jar
   directly with `java -jar` on some setups — use `mvn javafx:run`
   instead, or run with explicit module path flags pointing at a
   downloaded JavaFX SDK.
-
-## 9. Possible extensions (not required by the brief)
-
-- Hash the PIN before storing it instead of relying on UI-only entry.
-- Add an "export to CSV/PDF" button for bank-staff reporting.
-- Add a login screen for branch staff before the form is accessible.
