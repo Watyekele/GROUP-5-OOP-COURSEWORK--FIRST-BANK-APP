@@ -63,6 +63,7 @@ a standard Access 2010-format file.
   JavaFX and UCanAccess jars from Maven Central)
 
 Check your versions:
+
 ```bash
 java -version
 mvn -version
@@ -111,13 +112,13 @@ java -jar target/firstbank-account-app-1.0.0.jar
    polymorphically: the form builds the matching `Account` subclass and
    calls its overridden `minimumDeposit()`.
 
-| Account Type  | Minimum Deposit (UGX) | Extra rule                  |
-|---------------|------------------------|------------------------------|
-| Savings       | 50,000                 | —                             |
-| Current       | 200,000                | —                             |
-| Fixed Deposit | 1,000,000              | —                             |
-| Student       | 10,000                 | Age must be 18–25             |
-| Joint         | 100,000                | Second NIN required           |
+| Account Type  | Minimum Deposit (UGX) | Extra rule          |
+| ------------- | --------------------- | ------------------- |
+| Savings       | 50,000                | —                   |
+| Current       | 200,000               | —                   |
+| Fixed Deposit | 1,000,000             | —                   |
+| Student       | 10,000                | Age must be 18–25   |
+| Joint         | 100,000               | Second NIN required |
 
 6. Click **Submit**.
    - If anything is invalid: each offending field shows a small red
@@ -145,7 +146,3 @@ java -jar target/firstbank-account-app-1.0.0.jar
 - Hash the PIN before storing it instead of relying on UI-only entry.
 - Add an "export to CSV/PDF" button for bank-staff reporting.
 - Add a login screen for branch staff before the form is accessible.
-
----
-*Developed for the OOP coursework, Victoria University, Faculty of
-Science and Technology — Object Oriented Programming (1201ST/1204FST/1301ST).*
